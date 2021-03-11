@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html>
-<title>JNA Sneakers Store</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #808080;
+}
+
+.button1:hover {
+  background-color: #808080;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
 </style>
 <body class="w3-content" style="max-width:1200px">
 
@@ -20,9 +56,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h3 class="w3-wide"><b>JNA Sneakers Store</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-gray w3-button">Menu</a>
+    <a href="index.html" class="w3-bar-item  w3-button">Menu</a>
     <a href="about.html" class="w3-bar-item w3-button">About</a>
-    <a href="product.html" class="w3-bar-item w3-button">Product</a>
+    <a href="p" class="w3-bar-item w3-gray w3-button">Product</a>
     <!-- <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Products <i class="fa fa-caret-down"></i>
     </a>
@@ -37,8 +73,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <a href="#" class="w3-bar-item w3-button">Blazers</a>
     <a href="#" class="w3-bar-item w3-button">Shoes</a> -->
   </div>
-  <!-- <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <!-- <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
   <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a> -->
 </nav>
 
@@ -56,115 +92,57 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
-  
+ 
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
     <p class="w3-left">Shoes</p>
     <p class="w3-right">
-      <a href="cart.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
     </p>
   </header>
 
   <!-- Image header -->
-  <div class="w3-display-container w3-container">
+  <!-- <div class="w3-display-container w3-container">
     <img src="img/running wallpaper.jpg" alt="Jeans" style="width:100%">
     <div class="w3-display-topleft w3-text-black" style="padding:24px 48px">
       <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
       <h1 class="w3-hide-large w3-hide-medium w3-text-pink">New arrivals</h1>
-      <h1 class="w3-hide-small">COLLECTIONS 2021</h1>
-      <p><a href="product.html" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+      <h1 class="w3-hide-small">COLLECTION 2020</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
     </div>
-  </div>
+  </div> -->
 
   <div class="w3-container w3-text-grey" id="jeans">
-    <p>2 items</p>
+    <p>8 items</p>
   </div>
 
   <!-- Product grid -->
   <div class="w3-row w3-grayscale">
     <div class="w3-col l3 s6">
+
       <div class="w3-container">
-        <div class="w3-display-container">
         <img src="img/nike_flyknit.jpg" style="width:200px;height:150px;">
-        <span class="w3-tag w3-display-topleft">New</span>
-        <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-        </div>
-        </div> 
         <p>Nike Flyknit Racer<br><b>RM631.58</b></p>
       </div>
-      <!-- <div class="w3-container">
-        <img src="img/Nike_AirMax1.jpg" style="width:200px;height:150px;">
-        <p>Nike Air Max 1<br><b>RM551.88</b></p>
-      </div> -->
-    </div>
+ 
+<body>
 
-    <div class="w3-col l3 s6">
 
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="img/adidas_yeezy.png" style="width:200px;height:150px;">
-          <span class="w3-tag w3-display-topleft">New</span>
-          <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p>Adidas Yeezy Boost 350<br><b>RM1448.90</b></p>
-      </div>
+<form action="/action_page.php">
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity">
+</form>
+<button class="button button1" input type="submit">Add to cart</button>
 
-      <!-- <div class="w3-container">
-        <img src="img/adidas_yeezy.png" style="width:200px;height:150px;">
-        <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-        
-      </div>
-        <p>Adidas Yeezy Boost350<br><b>RM1220.38</b></p>
-      </div> -->
+</body>
+</html>
+
+
 
     </div>
 
-    <div class="w3-col l3 s6">
-
-      <div class="w3-container">
-        <div class="w3-display-container">
-        <img src="img/Puma_RSX.jpg" style="width:200px;height:150px;">
-        <span class="w3-tag w3-display-topleft">Sale</span>
-        <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-        </div>
-      </div>
-      <p>Puma RS-X 3<br><b>RM428.88</b></p>
-      </div>
-
-      <!-- <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="img/Puma_Nintendo.jpg" style="width:200px;height:150px;">
-          <span class="w3-tag w3-display-topleft">Sale</span>
-          <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p>Puma Nintendo<br><b class="w3-text-red">RM332.43</b></p>
-      </div> -->
-
-    </div>
-
-    <div class="w3-col l3 s6">
-      <!-- <div class="w3-container">
-        <img src="img/vans_oldskool.jpg" style="width:200px;height:150px;">
-        <p>Vans OldSkool<br><b>RM125.50</b></p>
-      </div> -->
-      <div class="w3-container">
-        <div class="w3-display-container">
-        <img src="img/vans_vangogh.jpg" style="width:200px;height:150px;">
-        <span class="w3-tag w3-display-topleft">Sale</span>
-        <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-        </div>
-        </div>
-        <p>Vans Van Gogh<br><b>RM216.38</b></p>
-      </div>
-    </div>
+   
   </div>
 
   <!-- Subscribe section -->
@@ -174,7 +152,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
     <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
   </div> -->
-  
+ 
   <!-- Footer -->
   <!-- <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
@@ -235,7 +213,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <script>
-// Accordion 
+// Accordion
 function myAccFunc() {
   var x = document.getElementById("demoAcc");
   if (x.className.indexOf("w3-show") == -1) {
